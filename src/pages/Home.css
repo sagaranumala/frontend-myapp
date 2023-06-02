@@ -1,0 +1,78 @@
+.dropdown2{
+    height: 25px;
+    width: 220px;
+    display: block;
+}
+.select-scenarioname{
+    margin-left: 30px;
+}
+th{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 150px;
+    background-color: gray;
+}
+td{
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    width: 150px;
+}
+table{
+    margin-top: 20px;
+    margin-left: 30px;
+    border: none;
+}
+.graph{
+    height: 500px;
+    width: 1200px;
+    background-color: gray;
+    margin-top: 50px;
+    margin-left: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.simulation{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    gap:30px;
+}
+.start-btn{
+    background-color: #6AF853;
+    width: 120px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+}
+.reset-btn{
+    background-color: #6495ED;
+    width: 120px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+}
+.car{
+    position: absolute;
+    overflow: hidden;
+} 
+.model-item2{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.cancel-icon2{
+    background-color:white;
+    height: 30px;
+    width: 400px;
+    margin-top: 20px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row-reverse;
+    color: red;
+}
