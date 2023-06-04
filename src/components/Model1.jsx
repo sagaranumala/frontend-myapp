@@ -1,5 +1,5 @@
 import React, { useState,useEffect} from 'react'
-import './Model1.css'
+import '../styles/Model1.css'
 import axios from 'axios'
 
 function Model1({name}) {

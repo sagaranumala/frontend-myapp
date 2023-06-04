@@ -1,7 +1,7 @@
 import React from 'react'
 import {useRef,useState,useEffect} from 'react'
 import axios from 'axios'
-import "./Addscenario.css"
+import "../styles/Addscenario.css"
 import {Link} from "react-router-dom"
 
 
@@ -47,11 +47,11 @@ function Addscenario() {
         <div className='input-fields'>
            <div>
               <label htmlFor="scenario_name" style={{color:"white"}}>Scenario Name</label>
-              <input type="text" id="scenario_name" required className='scenario-name' ref={scenarioName}/>
+              <input type="text" id="scenario_name" required className='scenario-name1' ref={scenarioName}/>
            </div>
            <div>
               <label htmlFor="scenario_time" style={{color:"white"}}>Scenario Time(seconds)</label>
-              <input type="number" id="scenario_time" required className='scenario-time' ref={scenarioTime}/>
+              <input type="number" id="scenario_time" required className='scenario-time1' ref={scenarioTime}/>
            </div>
          </div>
         </form>

@@ -1,12 +1,13 @@
 import React from 'react'
 import { useEffect,useState } from 'react'
 import axios from 'axios'
-import './Allscenarios.css'
+import '../styles/Allscenarios.css'
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
 import {Link} from "react-router-dom"
 import Model1 from './Model1';
 import CancelSharpIcon from '@mui/icons-material/CancelSharp';
+import {NavLink} from 'react-router-dom'
 
 function Allscenarios() {
   const [scenarioData,setScenarioData]=useState([]);    
@@ -93,7 +94,7 @@ const handleCancel=()=>{
                         <td>{d.scenarioName}</td>
                         <td>{d.scenarioTime}</td>
                         <td>{d?.vehicleList?.length}</td>
-                        <td><button className='add-vehicle-table-btn'>+</button></td>
+                        <td><NavLink  to="/addvehicle"><button className='add-vehicle-table-btn'>+</button></NavLink></td>
                         <td><EditIcon onClick={e=>handleEdit(i,e)}/></td>
                         <td><DeleteIcon onClick={e=>handleDeleteScenario(i,e)}/></td>
                     </tr>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useEffect,useState,useRef } from 'react';
-import './Home.css'
+import '../styles/Home.css'
 import axios from 'axios'
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';

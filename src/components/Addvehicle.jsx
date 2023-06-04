@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect,useState,useRef } from 'react';
 import axios from 'axios'
-import "./Addvehicle.css"
+import "../styles/Addvehicle.css"
 
 function Addvehicle() {
    const [senariodata,setScenarioData]=useState([]);

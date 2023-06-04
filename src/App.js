@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Sidebar from './Sidebar';
-import Addscenario from './pages/Addscenario';
-import Allscenarios from './pages/Allscenarios';
-import Addvehicle from './pages/Addvehicle';
-import Home from './pages/Home';
+import Sidebar from './components/Sidebar';
+import Addscenario from './components/Addscenario';
+import Allscenarios from './components/Allscenarios';
+import Addvehicle from './components/Addvehicle';
+import Home from './components/Home';
 
 const App = () => {
   return (
