@@ -61,7 +61,7 @@
 }
 .vehicle-list{
 @media screen and (max-width:920px) {
-        height: 400px;
+        height: 600px;
         width: 250px;
         display:flex;
         flex-direction:column;
