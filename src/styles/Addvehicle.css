@@ -63,6 +63,8 @@
 @media screen and (max-width:920px) {
         height: 400px;
         width: 250px;
+        display:flex;
+        flex-direction:column;
         gap:10px;
         margin-left:0px;
 }
