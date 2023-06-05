@@ -12,16 +12,18 @@
     font-weight: 400;
 }
 .vehicle-list{
-    height: 250px;
-    width: 80%;
+    @media(min-width:921px){
+        height: 250px;
+        width: 80%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 40px;
+    }
     background-color: gray;
     margin-top: 30px;
     border-radius: 5px;
     display: flex;
-    flex-wrap: wrap;
     padding-top: 30px;
-    justify-content: space-around;
-    gap: 40px;
 }
 .dropdown1{
     height: 25px;
