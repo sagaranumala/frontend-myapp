@@ -73,5 +73,10 @@
 .vehicle-container{
 @media(max-width:450px) {
         margin-left: 20px;
+        height: 600px;
+        width: 250px;
+        display:flex;
+        flex-direction:column;
+        gap:10px;
 }
 }
