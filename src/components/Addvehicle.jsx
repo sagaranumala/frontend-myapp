@@ -72,7 +72,7 @@ function Addvehicle() {
    useEffect(()=>{
       console.log(vehicleData)
       if(vehicleData){
-         axios.put(`${rest_api}/${currentSenariodata._id}`,vehicleData)
+         axios.put(`${rest_api}${currentSenariodata._id}`,vehicleData)
             .then(res =>{
                alert('success')
             }).catch(err => console.log(err));
@@ -127,9 +127,9 @@ function Addvehicle() {
       </from>
       
        <div className='buttons'>
-           <button type='button' className='submit-btn' onClick={addVehicle}>Add</button>
-           <button type='button' className='reset-btn1' onClick={reset}>Reset</button>
-           <button type='button' className='goback-btn'>Go Back</button>
+           <button type='button' className='submit-btn2' onClick={addVehicle}>Add</button>
+           <button type='button' className='reset-btn2' onClick={reset}>Reset</button>
+           <button type='button' className='goback-btn2'>Go Back</button>
         </div>
     </div>
   )

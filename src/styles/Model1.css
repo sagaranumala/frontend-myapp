@@ -2,8 +2,8 @@
     height: 300px;
     width: 300px;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     gap:50px;
     background-color:lightblue;
     border-radius: 5px;
@@ -19,8 +19,12 @@
 .save-btn:hover{
     background-color: yellow;   
 }
+.model-time{
+    margin-left: 40px;
+}
 .model-name{
     margin-top: 30px;
+    margin-left: 40px;
 }
 .scenario-name,.scenario-time{
     font-size: 16px;

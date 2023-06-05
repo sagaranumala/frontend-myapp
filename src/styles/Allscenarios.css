@@ -37,23 +37,23 @@
     background-color: #FF8C00;
     border-radius: 3px;
 }
-th{
+.table-scenario th{
     color: white;
     text-align: center;
     padding: 10px;
     width: 150px;
     background-color: gray;
 }
-td{
+.table-scenario td{
     background-color: white;
     text-align: center;
     padding: 10px;
     width: 150px;
 }
-table td{
+.table-scenario td{
     border: none;
 }
-table{
+.table-scenario{
     margin-left: 30px;
 }
 .add-vehicle-table-btn{
@@ -77,4 +77,32 @@ table{
     display: flex;
     flex-direction: row-reverse;
     color: red;
+}
+@media screen and (max-width:550px){
+    .container1{
+       display: flex;
+       flex-direction: column;
+    }
+    .add-vehicle-btn,.delete-btn{
+        display: block;
+        margin-top: 10px;
+    }
+    .add-senario-btn{
+        margin-left: 20px;
+    }
+    .table-scenario{
+    margin-top: 50px;
+    margin-left: 0px;
+   }
+   .scenario-row{
+    padding: 5px;
+    width: 20px;
+   }
+}
+.model-item{
+    @media(max-width:920px){
+        display:flex;
+        flex-direction:column;
+        align-items:normal;
+    }
 }

@@ -11,6 +11,16 @@ function Addscenario() {
     const scenarioTime=useRef();
     var rest_api=process.env.REACT_APP_API;
     
+     //ADDING DATA IN API(CREATE)
+     useEffect(()=>{
+      if(data){
+         axios.post(`${rest_api}`,data)
+            .then(res =>{
+               alert('success')
+            }).catch(err => console.log(err));
+        }
+     },[data])
+
     const submit=(e)=>{
             e.preventDefault();
             var data1={};
@@ -29,16 +39,6 @@ function Addscenario() {
       scenarioTime.current.value='';
      }
 
-     //ADDING DATA IN API(CREATE)
-     useEffect(()=>{
-      if(data){
-         axios.post(`${rest_api}/`,data)
-            .then(res =>{
-               alert('success')
-            }).catch(err => console.log(err));
-        }
-     },[data])
-     //console.log(data)
   return (
     <div className='container-add'>
       <span className='add-scenario'>Scenario / add</span>
@@ -56,9 +56,9 @@ function Addscenario() {
          </div>
         </form>
         <div className='buttons'>
-           <button type='button' className='submit-btn' onClick={submit}>Add</button>
-           <button type='button' className='reset-btn' onClick={reset}>Reset</button>
-           <Link to="/"><button type='button' className='goback-btn'>Go Back</button></Link>
+           <button type='button' className='submit-btn1' onClick={submit}>Add</button>
+           <button type='button' className='reset-btn1' onClick={reset}>Reset</button>
+           <Link to="/"><button type='button' className='goback-btn1'>Go Back</button></Link>
         </div>
     </div>
   )

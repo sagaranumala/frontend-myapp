@@ -1,5 +1,4 @@
 .container-add{
-    margin-left: 50px;
     display: flex;
     flex-direction: column;
 }
@@ -32,26 +31,53 @@
     display: block;
 }
 .input-fields{
+    @media(min-width:1281px){
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 30px;
-    width: 80%;
+    width: 800px;
     height: 150px;
+    }
+}
+.input-fields{
+    @media(max-width:1280px){
+    display: flex;
+    flex-direction:column;
+    height:200px;
+    width:400px;
+    align-items:center;
+    gap:40px;
+    };
+    @media(max-width:900px){
+    display: flex;
+    flex-direction:column;
+    height:150px;
+    width:280px;
+    align-items:center;
+    gap:20px;
+    };
+    @media(max-width:450px){
+        height: 150px;
+        width:250px;
+        display: flex;
+        flex-direction:column;
+       align-items: center;
+       gap:20px;
+    };
     background-color: gray;
     border-radius: 5px;
 }
 .buttons{
     margin-top: 30px;
 }
-.submit-btn{
+.submit-btn1{
     height: 30px;
     width: 60px;
     background-color:#6AF853;
     border: none;
     border-radius: 3px;
 }
-.reset-btn{
+.reset-btn1{
     margin-left: 20px;
     height: 30px;
     width: 70px;
@@ -59,27 +85,11 @@
     background-color: #FF8C00;
     border-radius: 3px;
 }
-.goback-btn{
+.goback-btn1{
     margin-left: 20px;
     height: 30px;
     width: 80px;
     background-color: #6495ED;
     border: none;
     border-radius: 3px;
-}
-@media  screen and (max-width:900px) {
-    .input-fields{
-        display: flex;
-        flex-direction: column;
-    }
-}
-@media  screen and (max-width:600px) {
-    .reset-btn,.goback-btn{
-        display: block;
-        margin-left: 0px;
-        margin-top: 10px;
-    }
-    .scenario-name,.scenario-time{
-        width: 150px;
-    }
 }

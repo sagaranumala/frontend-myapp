@@ -30,7 +30,7 @@ function Allscenarios() {
 
    //DELETING SCENARIO DATA BY ID
    useEffect(()=>{
-    axios.delete(`${rest_api}/${scenarioId}`)
+    axios.delete(`${rest_api}${scenarioId}`)
        .then(res =>{
          getData();
        }).catch(err => console.log(err));
@@ -46,7 +46,7 @@ const handleDeleteScenario=(index,e)=>{
 //DELETE ALL SCENARIOS Of API
 const handleDeleteAll=()=>{
   scenarioData.forEach((item)=>{
-  axios.delete(`${rest_api}/${item.id}`)
+  axios.delete(`${rest_api}${item.id}`)
           .then(res =>{
             console.log(res);
           }).catch(err => console.log(err));
@@ -74,7 +74,7 @@ const handleCancel=()=>{
             <button type='button' className='delete-btn' onClick={handleDeleteAll}>Delete All</button>
           </div>
         </div>
-        <table >
+        <table className='table-scenario'>
           <thead>
             <tr>
                <th>Scenario Id</th>

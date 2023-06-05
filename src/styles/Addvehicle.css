@@ -12,7 +12,7 @@
     font-weight: 400;
 }
 .vehicle-list{
-    height: 200px;
+    height: 250px;
     width: 80%;
     background-color: gray;
     margin-top: 30px;
@@ -36,14 +36,14 @@
     border-radius: 3px;
 }
 
-.submit-btn{
+.submit-btn2{
     height: 30px;
     width: 60px;
     background-color:#6AF853;
     border: none;
     border-radius: 3px;
 }
-.reset-btn1{
+.reset-btn2{
     margin-left: 20px;
     height: 30px;
     width: 70px;
@@ -51,11 +51,25 @@
     background-color: #FF8C00;
     border-radius: 3px;
 }
-.goback-btn{
+.goback-btn2{
     margin-left: 20px;
     height: 30px;
     width: 80px;
     background-color: #6495ED;
     border: none;
     border-radius: 3px;
+}
+.vehicle-list{
+@media screen and (max-width:920px) {
+        height: 400px;
+        width: 250px;
+        gap:10px;
+        margin-left:0px;
+}
+}
+
+.vehicle-container{
+@media(max-width:450px) {
+        margin-left: 20px;
+}
 }

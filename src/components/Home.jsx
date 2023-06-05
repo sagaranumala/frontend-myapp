@@ -33,7 +33,7 @@ const getData=()=>{
 //UPDATING VEHICLE DATA OF API
 useEffect(()=>{
   if(vehicle){
-     axios.put(`${rest_api}/${id}`,vehicle)
+     axios.put(`${rest_api}${id}`,vehicle)
         .then(res =>{
            alert('success')
            getData();

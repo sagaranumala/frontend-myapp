@@ -15,7 +15,17 @@ function Model2({vehicleDetails}) {
         vehicleDirection:vehicleData1.vehicleDirection
     });
     var rest_api=process.env.REACT_APP_API;
-  //console.log(vehicleDetails.vehicleList[vehicleDetails.index].vehicleName);
+  
+  //UPDATING VEHICLE DATA
+  useEffect(()=>{
+   if(newVehicle){
+      console.log(newVehicle.vehicleList);
+      axios.put(`${rest_api}${newVehicle._id}`,newVehicle)
+         .then(res =>{
+            alert('success')
+         }).catch(err => console.log(err));
+     }
+  },[newVehicle])
 
     //COLLECTING DATA FROM INPUT FIELDS
     const handleVehicleData=(e)=>{
@@ -26,18 +36,7 @@ function Model2({vehicleDetails}) {
         })
     }
   
-    //UPDATING VEHICLE DATA
-    useEffect(()=>{
-      if(newVehicle){
-         console.log(newVehicle.vehicleList);
-         axios.put(`${rest_api}/${newVehicle._id}`,newVehicle)
-            .then(res =>{
-               alert('success')
-            }).catch(err => console.log(err));
-        }
-     },[newVehicle])
-
-   //STORING UPDATED DATA
+     //STORING UPDATED DATA
     const handleEDitVehicle=()=>{
       let data=vehicleDetails;
       data.vehicleList[data.index].vehicleName=details.vehicleName

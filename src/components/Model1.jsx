@@ -19,7 +19,7 @@ function Model1({name}) {
  //UPDATING SCENARIO DATA 
  useEffect(()=>{
   if(update){
-     axios.put(`${rest_api}/${update.id}`,update)
+     axios.put(`${rest_api}${update.id}`,update)
         .then(res =>{
            alert('success')
         }).catch(err => console.log(err));
@@ -39,7 +39,7 @@ function Model1({name}) {
               <label htmlFor="scenario_name" style={{color:"white"}}>Scenario Name</label>
               <input type="text" id="scenario_name" className='scenario-name' value={dataScenarioName} onChange={handelChange1}/>
            </div>
-           <div>
+           <div className='model-time'>
               <label htmlFor="scenario_time" style={{color:"white"}}>Scenario Time(seconds)</label>
               <input type="number" id="scenario_time" className='scenario-time' value={dataScenarioTime} onChange={handelChange2}/>
            </div>
